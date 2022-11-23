@@ -95,9 +95,13 @@ button {
     justify-content: center;
     gap: 50px;
 }
+.upper{
+    text-transform: uppercase;
+}
 
 .nav ul li a {
     color: #fff;
+    text-transform: uppercase;
 }
 
 
@@ -563,7 +567,7 @@ li.li::after{
 
 .about-text p.head {
     font-family: 'Oswald', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 35px;
     color: #333333;
     width: 570px;
@@ -815,11 +819,70 @@ li.li::after{
     margin-top: 20px;
 }
 
+.swiper-container.offer-wrapper{
+    height: 700px;
+    position: relative;
+}
 
+.swiper-pagination {
+	position: absolute;
+	bottom: 20px;
+	right: 0px;
+	left: 0;
+	margin: 0;
+}
+.swiper-pagination-bullet{
+	/* padding: 5px 10px; */
+	width: 20px;
+	height: 20px;
+    border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color:#000;
+	opacity: 1;
+	background: #fff;
+}
+.swiper-pagination-bullet-active,.swiper-pagination-1-bullet-active {
+	color:#fff;
+	background: #fff ;
+    width: 15px;
+	height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    position: relative;
+    /* border-image: linear-gradient(to right, #010dfe 0%,#eb013f 91%); */
+    
+}
+.swiper-pagination-bullet-active::after,.swiper-pagination-1-bullet-active::after{
+    position: absolute;
+    top: -10px; bottom: -10px;
+    left: -10px; right: -10px;
+    background: linear-gradient(to right, #010dfe 0%,#eb013f 91%);;
+    content: '';
+    z-index: -1;
+    border-radius: 50%;
+}
+.image-slider-4{
+    padding-bottom: 30px;
+}
+/* linear-gradient(to right, #010dfe 0%,#eb013f 91%) */
+.swiper-pagination-1{
+    /* border: 1px solid red; */
+    /* z-index: 1000; */
+    position: static;
+    margin-top: 50px;
+    gap: 10px;
+}
 
-
-
-
+/* .swiper-pagination-1-bullet {
+    background-color: #fff;
+} */
+/* .swiper-pagination-1-bullet-active{
+    border: 3px solid ;
+    border-color: linear-gradient(to right, #010dfe 0%,#eb013f 91%);
+    background-color: #000;
+} */
 @media(max-width:1440px) {
     .contact {
         gap: 20px;

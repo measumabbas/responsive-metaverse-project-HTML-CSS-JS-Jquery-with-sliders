@@ -21,9 +21,11 @@
         slidesPerView: 3,
         pagination: {
             el: '.swiper-pagination',
-            clickable: true,
-            type: 'bullets',
-        },
+                  clickable: true,
+              renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';
+              },
+          },
 		breakpoints: {
             // when window is <= 580px
             580: {
@@ -57,10 +59,12 @@
         spaceBetween: 30,
         slidesPerView: 4,
         pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            type: 'bullets',
-        },
+            el: '.swiper-pagination-1',
+                  clickable: true,
+              renderBullet: function (index, className) {
+                return '<div class="' + className + '"></div>';
+              },
+          },
 		breakpoints: {
             // when window is <= 580px
             580: {
@@ -90,14 +94,16 @@
             delay: 4000,
             disableOnInteraction: false
 		},
+        pagination: {
+            el: '.swiper-pagination-1',
+                  clickable: true,
+              renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';
+              },
+          },
         loop: true,
         spaceBetween: 30,
         slidesPerView: 1,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            type: 'bullets',
-        },
     });
 
 
