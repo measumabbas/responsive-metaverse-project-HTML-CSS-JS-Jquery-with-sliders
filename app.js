@@ -15,10 +15,10 @@ menuBtn.addEventListener('click', () => {
 
 
 var imageSliderTwo = new Swiper('.image-slider-2', {
-//   autoplay: {
-//       delay: 2000,
-//       disableOnInteraction: false
-// },
+  autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+},
   loop: true,
   spaceBetween: 30,
   slidesPerView: 3,
